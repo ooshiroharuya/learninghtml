@@ -5,6 +5,8 @@
     <title>Yves的html 2</title>
 </head>
 <body>
+<!--target: 告诉浏览器在新窗口打开链接 rel: 告诉浏览器新窗口页面和旧窗口之间的关系，noopener确保新窗口将在一条新的进程中进行执行以免旧页面数据被窃取-->
 <p><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">会在一个新页面中打开</a></p>
+<!--! 基本的注意事项：请始终添加正斜杠到子文件夹，假如这样书写"https://ww.google.com"将会向服务器产生两次http请求，这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像"https://www.google.com/"-->
 </body>
 </html>
